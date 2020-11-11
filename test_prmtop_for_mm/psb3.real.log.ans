@@ -1,0 +1,100 @@
+ 1. Start Reading Files.
+   1-1. Initialize.
+     infile_name  = psb3.ein
+     optfile_name = psb3.real.opt
+     prmfile_name = psb3.prmtop
+     logfile_name = stdout
+     is_pbc       =  T
+     is_ewald     =  T
+     cell_x       =    15.0666957000000     
+     cell_y       =    14.4591905000000     
+     cell_z       =    11.5588657000000     
+     basis_r(a)   =    15.0666957000000       8.853700682043409E-016
+  7.077763940639565E-016
+     basis_r(b)   =   0.000000000000000E+000   14.4591905000000     
+  7.077763940639565E-016
+     basis_r(c)   =   0.000000000000000E+000  0.000000000000000E+000
+   11.5588657000000     
+     basis_k(a*)  =   6.637155351853292E-002 -4.064085528545430E-018
+ -4.064085528545430E-018
+     basis_k(b*)  =   0.000000000000000E+000  6.916016494837661E-002
+ -4.234838731626619E-018
+     basis_k(c*)  =   0.000000000000000E+000  0.000000000000000E+000
+  8.651367927910089E-002
+   1-2. Start Reading Prmtop File.
+          41           0          10          11
+          41           1          10          11
+          41           2          10          11
+          41           3          10          11
+          41           4          10          11
+          41           5          10          11
+          41           6          10          11
+          41           7          10          11
+          41           8          10          11
+          41           9          10          11
+          41          10          10          11
+          41          11          10          11
+     natom        =          231
+   1-3. Start Reading EIn File.
+   1-4. Convert Units.
+     Info) Coordinate Output is omitted when log_level < 2.
+ 2. Get into Dipole Moment Calculation.
+ 3. Get into Energy and Force Calculation.
+   3-1. Get into Stretching Energy and Force Calculation.
+   3-2. Get into Bending Energy and Force  Calculation.
+   3-3. Get into Torsion Energy and Force Calculation.
+   3-4. Get into 1-4 Interaction Energy and Force Calculation.
+   3-5. Get into Non-bonding Energy and Force Calculation.
+   3-6. Get into Particle Mesh Ewald Sum Energy and Force Calculation.
+ time=  0.000000000000000E+000
+ time=  0.000000000000000E+000
+ time=  0.000000000000000E+000
+ time=  2.999000000000000E-003
+ 5-a time=  2.999000000000000E-003
+ 5-b time=  2.999000000000000E-003
+ 5-c time=  4.099400000000000E-002
+ 5-d time=  4.099400000000000E-002
+ 5-e time=  4.299300000000000E-002
+ 5-f time=  4.299300000000000E-002
+ 5-g time=  5.399200000000001E-002
+ time=  5.399200000000001E-002
+ time=  5.399200000000001E-002
+ time=  5.399200000000001E-002
+ time=  5.399200000000001E-002
+   3-7. Integrating Energies and Forces.
+     Total_charge                =       0.000000018988 e
+     Geometrical Gravity Point   =       5.917518734250 Angstrom
+       x component               =       2.245894178986 Angstrom
+       y component               =       3.758542575300 Angstrom
+       z component               =       3.980746791326 Angstrom
+     Electric Dipole Moment      =      59.099836641664 e*Angstrom
+       x component               =      -0.495537481973 e*Angstrom
+       y component               =     -53.205190560986 e*Angstrom
+       z component               =      25.724556964980 e*Angstrom
+     E_bond        (     Total ) =   20148.777607461634 kcal/mol
+       E_bond      ( without H ) =    5916.119944082659 kcal/mol
+       E_bond      ( include H ) =   14232.657663378974 kcal/mol
+     E_bend        (     Total ) =      73.184145589959 kcal/mol
+       E_bend      ( without H ) =       1.558097622575 kcal/mol
+       E_bend      ( include H ) =      71.626047967384 kcal/mol
+     E_tors        (     Total ) =      10.435026140124 kcal/mol
+       E_tors      ( without H ) =       0.192656921889 kcal/mol
+       E_tors      ( include H ) =      10.242369218236 kcal/mol
+     E_coulomb14   (     Total ) =     372.844055406908 kcal/mol
+       E_coulomb14 ( without H ) =       2.549980073510 kcal/mol
+       E_coulomb14 ( include H ) =     370.294075333398 kcal/mol
+     E_LJ14        (     Total ) =    4160.577886780044 kcal/mol
+       E_LJ14      ( without H ) =     975.923579880233 kcal/mol
+       E_LJ14      ( include H ) =    3184.654306899811 kcal/mol
+     E_coulomb     (   Not 1-4 ) =       0.000000000000 kcal/mol
+     E_LJ          (   Not 1-4 ) =  235379.843646589987 kcal/mol
+     E_Ewald       (   Not 1-4 ) =    -444.462210864554 kcal/mol
+------------------------------------------------------------------------
+     E_total                     =  259701.200157104089 kcal/mol
+     E_total                     =     413.860188821212 Hartree
+     Info) Force Output is omitted when log_level < 2.
+ 5. Write Files.
+   5-1. Convert Units.
+   5-2. Writing EOu File.
+     EOu File Name               = psb3.real.eou.ans
+ Terminated.

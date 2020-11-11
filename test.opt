@@ -1,0 +1,16 @@
+&filename
+  prmfile_name ='cyclo.prmtop'
+  logfile_name ='mm.log'
+  log_level    = 2
+/
+&pbc
+  is_pbc       = .true.
+  is_ewald     = .true.
+  is_ee        = .false.
+  cell_x       = 10.0d0
+  cell_y       = 10.0d0
+  cell_z       = 10.0d0
+  alpha        = 90.0d0
+  beta         = 90.0d0
+  gamma        = 90.0d0
+/

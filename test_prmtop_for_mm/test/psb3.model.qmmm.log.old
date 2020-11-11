@@ -1,0 +1,80 @@
+lap:    0.000  clock:    0.000  (main/Initialize)
+ 1. Start Reading Files.
+   1-1. Initialize.
+     infile_name  = ./psb3.qmmm.ein
+     optfile_name = ./psb3.model.opt
+     prmfile_name = ../psb3.prmtop
+     logfile_name = stdout
+     is_pbc       =  F
+   1-2. Start Reading Prmtop File.
+     natom        =          231
+   1-3. Start Reading EIn File.
+   1-4. Convert Units.
+     Info) Coordinate Output is omitted when log_level < 2.
+lap:    0.002  clock:    0.002  (main/Read_Files)
+lap:    0.000  clock:    0.002  (main/moment)
+ 3. Get into Energy and Force Calculation.
+   3-1. Get into Stretching Energy and Force Calculation.
+lap:    0.000  clock:    0.002
+   0.000  (main/bond/@End)
+lap:    0.000  clock:    0.002
+   0.000  (main/bond/@End)
+lap:    0.000  clock:    0.002
+   0.000  (main/angle/@End)
+lap:    0.000  clock:    0.002
+   0.000  (main/angle/@End)
+lap:    0.000  clock:    0.002
+   0.000  (main/torsion/tors)
+lap:    0.000  clock:    0.002
+   0.000  (main/torsion/@End)
+lap:    0.000  clock:    0.002
+   0.000  (main/torsion/tors)
+lap:    0.000  clock:    0.002
+   0.000  (main/torsion/@End)
+lap:    0.000  clock:    0.002
+   0.000  (main/nb14/@End)
+lap:    0.000  clock:    0.002
+   0.000  (main/nb14/@End)
+lap:    0.001  clock:    0.003
+   0.001  (main/nonbon/@End)
+   3-7. Integrating Energies and Forces.
+lap:    0.001  clock:    0.003  (main/integration)
+     Total_charge                =       0.000000018988 e
+     Geometrical Gravity Point   =       5.917518734250 Angstrom
+       x component               =       2.245894178986 Angstrom
+       y component               =       3.758542575300 Angstrom
+       z component               =       3.980746791326 Angstrom
+     Electric Dipole Moment      =       3.243269873175 e*Angstrom
+       x component               =      -0.027194011696 e*Angstrom
+       y component               =      -2.919784576569 e*Angstrom
+       z component               =       1.411707470548 e*Angstrom
+     E_bond        (     Total ) =    1583.611062818298 kcal/mol
+       E_bond      ( without H ) =     900.113843783080 kcal/mol
+       E_bond      ( include H ) =     683.497219035219 kcal/mol
+     E_bend        (     Total ) =       5.031747383135 kcal/mol
+       E_bend      ( without H ) =       1.558097622575 kcal/mol
+       E_bend      ( include H ) =       3.473649760560 kcal/mol
+     E_tors        (     Total ) =       2.510934137802 kcal/mol
+       E_tors      ( without H ) =       0.192656921889 kcal/mol
+       E_tors      ( include H ) =       2.318277215914 kcal/mol
+     E_coulomb14   (     Total ) =      11.684452740026 kcal/mol
+       E_coulomb14 ( without H ) =       2.549980073510 kcal/mol
+       E_coulomb14 ( include H ) =       9.134472666517 kcal/mol
+     E_LJ14        (     Total ) =    4160.577886780046 kcal/mol
+       E_LJ14      ( without H ) =     975.923579880234 kcal/mol
+       E_LJ14      ( include H ) =    3184.654306899813 kcal/mol
+     E_coulomb     (   Not 1-4 ) =    -169.608338969278 kcal/mol
+     E_LJ          (   Not 1-4 ) =    2194.471018552780 kcal/mol
+     E_Ewald       (   Not 1-4 ) =       0.000000000000 kcal/mol
+------------------------------------------------------------------------
+     E_total                     =    7788.278763442811 kcal/mol
+     E_total                     =      12.411411721166 Hartree
+     Info) Force Output is omitted when log_level < 2.
+lap:    0.000  clock:    0.003  (main/Logging)
+ 5. Write Files.
+   5-1. Convert Units.
+   5-2. Writing EOu File.
+     EOu File Name               = psb3.model.qmmm.eou
+ Terminated.
+lap:    0.000  clock:    0.003  (main/EOu-writing)
+lap:    0.003  clock:   (@Clock_Clear)

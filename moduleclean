@@ -1,0 +1,22 @@
+#!/usr/bin/perl
+
+foreach $fortname ( glob "*_genmod.f90" ) {
+  ( $modname = $fortname ) =~ s/\.f90$/.mod/;
+  if ( -e $modname ) {
+    open ( FORT, $fortname );
+    $line = <FORT>;
+    close ( FORT );
+    if ( $line =~ /!COMPILER-GENERATED INTERFACE MODULE:/ ) {
+      if ( unlink ( $fortname ) ) {
+        printf STDERR ( "  File %-20s was unlinked successfully.\n", $fortname );
+      } else {
+        printf STDERR ( "  File %-20s could NOT be unlinked.\n", $fortname );
+      }
+      if ( unlink ( $modname ) ) {
+        printf STDERR ( "  File %-20s was unlinked successfully.\n", $modname );
+      } else {
+        printf STDERR ( "  File %-20s could NOT be unlinked.\n", $modname );
+      }
+    }
+  }
+}

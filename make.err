@@ -1,0 +1,51 @@
+gfortran -L/home/qpc/.local/lib -I/home/qpc/.local/include -lblas -llapack -lfftw3 -fbacktrace -fbounds-check -Wuninitialized -g -v main.o prmtop.o	option.f90 prmtop_r.o ein.o		eou.o moment.o bond.o		bend.o tors.o nonbon.o	nb14.o pme.o		fm.o function.o pbc.o clock.o -o mm.x
+Driving: gfortran -L/home/qpc/.local/lib -I/home/qpc/.local/include -lblas -llapack -lfftw3 -fbacktrace -fbounds-check -Wuninitialized -g -v main.o prmtop.o option.f90 prmtop_r.o ein.o eou.o moment.o bond.o bend.o tors.o nonbon.o nb14.o pme.o fm.o function.o pbc.o clock.o -o mm.x -l gfortran -shared-libgcc
+Using built-in specs.
+COLLECT_GCC=gfortran
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/lto-wrapper.exe
+Target: x86_64-pc-cygwin
+Configured with: /cygdrive/i/szsz/tmpp/gcc/gcc-7.4.0-1.x86_64/src/gcc-7.4.0/configure --srcdir=/cygdrive/i/szsz/tmpp/gcc/gcc-7.4.0-1.x86_64/src/gcc-7.4.0 --prefix=/usr --exec-prefix=/usr --localstatedir=/var --sysconfdir=/etc --docdir=/usr/share/doc/gcc --htmldir=/usr/share/doc/gcc/html -C --build=x86_64-pc-cygwin --host=x86_64-pc-cygwin --target=x86_64-pc-cygwin --without-libiconv-prefix --without-libintl-prefix --libexecdir=/usr/lib --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --enable-bootstrap --enable-__cxa_atexit --with-dwarf2 --with-tune=generic --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-graphite --enable-threads=posix --enable-libatomic --enable-libcilkrts --enable-libgomp --enable-libitm --enable-libquadmath --enable-libquadmath-support --disable-libssp --enable-libada --disable-symvers --with-gnu-ld --with-gnu-as --with-cloog-include=/usr/include/cloog-isl --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible --enable-libstdcxx-filesystem-ts
+Thread model: posix
+gcc version 7.4.0 (GCC) 
+COLLECT_GCC_OPTIONS='-L/home/qpc/.local/lib' '-I' '/home/qpc/.local/include' '-fbacktrace' '-fbounds-check' '-Wuninitialized' '-g' '-v' '-o' 'mm.x' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/f951.exe option.f90 -I /home/qpc/.local/include -quiet -dumpbase option.f90 -mtune=generic -march=x86-64 -auxbase option -g -Wuninitialized -version -fbacktrace -fbounds-check -fintrinsic-modules-path /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/finclude -o /tmp/ccyCTEeH.s
+GNU Fortran (GCC) version 7.4.0 (x86_64-pc-cygwin)
+	compiled by GNU C version 7.4.0, GMP version 6.1.2, MPFR version 4.0.1-p11, MPC version 1.1.0, isl version isl-0.16.1-GMP
+
+warning: MPFR header version 4.0.1-p11 differs from library version 4.0.2.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+GNU Fortran2008 (GCC) version 7.4.0 (x86_64-pc-cygwin)
+	compiled by GNU C version 7.4.0, GMP version 6.1.2, MPFR version 4.0.1-p11, MPC version 1.1.0, isl version isl-0.16.1-GMP
+
+warning: MPFR header version 4.0.1-p11 differs from library version 4.0.2.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+COLLECT_GCC_OPTIONS='-L/home/qpc/.local/lib' '-I' '/home/qpc/.local/include' '-fbacktrace' '-fbounds-check' '-Wuninitialized' '-g' '-v' '-o' 'mm.x' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/bin/as.exe -v -I /home/qpc/.local/include -o /tmp/cchbrL9x.o /tmp/ccyCTEeH.s
+GNU assembler version 2.29.1 (x86_64-pc-cygwin) using BFD version (GNU Binutils) 2.29.1.20171006
+Reading specs from /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-L/home/qpc/.local/lib' '-I' '/home/qpc/.local/include' '-fbacktrace' '-fbounds-check' '-Wuninitialized' '-g' '-v' '-o' 'mm.x' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/bin/
+LIBRARY_PATH=/usr/local/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/local/lib/:/lib/lapack/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-L/home/qpc/.local/lib' '-I' '/home/qpc/.local/include' '-fbacktrace' '-fbounds-check' '-Wuninitialized' '-g' '-v' '-o' 'mm.x' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/collect2.exe -plugin /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/cyglto_plugin.dll -plugin-opt=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/lto-wrapper.exe -plugin-opt=-fresolution=/tmp/cc5KkSQX.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lcygwin -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id -m i386pep --wrap _Znwm --wrap _Znam --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwmRKSt9nothrow_t --wrap _ZnamRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=cyg --tsaware -o mm.x /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/crt0.o /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/crtbegin.o -L/home/qpc/.local/lib -L/usr/local/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0 -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/local/lib -L/lib/lapack -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../.. -lblas -llapack -lfftw3 main.o prmtop.o /tmp/cchbrL9x.o prmtop_r.o ein.o eou.o moment.o bond.o bend.o tors.o nonbon.o nb14.o pme.o fm.o function.o pbc.o clock.o -lgfortran -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lcygwin -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/default-manifest.o /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/crtend.o
+pme.o: In function `get_potential_':
+/home/qpc/mm2/mm2/pme.f90:407: undefined reference to `dfftw_plan_dft_3d_'
+/home/qpc/mm2/mm2/pme.f90:407:(.text+0x43e0): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `dfftw_plan_dft_3d_'
+/home/qpc/mm2/mm2/pme.f90:409: undefined reference to `dfftw_execute_dft_'
+/home/qpc/mm2/mm2/pme.f90:409:(.text+0x4408): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `dfftw_execute_dft_'
+/home/qpc/mm2/mm2/pme.f90:411: undefined reference to `dfftw_destroy_plan_'
+/home/qpc/mm2/mm2/pme.f90:411:(.text+0x4425): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `dfftw_destroy_plan_'
+/home/qpc/mm2/mm2/pme.f90:415: undefined reference to `dfftw_plan_dft_3d_'
+/home/qpc/mm2/mm2/pme.f90:415:(.text+0x4eab): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `dfftw_plan_dft_3d_'
+/home/qpc/mm2/mm2/pme.f90:417: undefined reference to `dfftw_execute_dft_'
+/home/qpc/mm2/mm2/pme.f90:417:(.text+0x4ed3): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `dfftw_execute_dft_'
+/home/qpc/mm2/mm2/pme.f90:419: undefined reference to `dfftw_destroy_plan_'
+/home/qpc/mm2/mm2/pme.f90:419:(.text+0x4ef0): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `dfftw_destroy_plan_'
+pme.o: In function `get_basis_k_':
+/home/qpc/mm2/mm2/pme.f90:495: undefined reference to `dgetrf_'
+/home/qpc/mm2/mm2/pme.f90:495:(.text+0xbfa5): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `dgetrf_'
+/home/qpc/mm2/mm2/pme.f90:496: undefined reference to `dgetri_'
+/home/qpc/mm2/mm2/pme.f90:496:(.text+0xbfe4): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `dgetri_'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:38: mm.x] Error 1

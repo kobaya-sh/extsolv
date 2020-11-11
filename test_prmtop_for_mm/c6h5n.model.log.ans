@@ -1,0 +1,58 @@
+ 1. Start Reading Files.
+   1-1. Initialize.
+     infile_name  = c6h5n.ein
+     optfile_name = c6h5n.model.opt
+     prmfile_name = c6h5n.prmtop
+     logfile_name = stdout
+     is_pbc       =  F
+   1-2. Start Reading Prmtop File.
+           6           0          10           0
+     natom        =           11
+   1-3. Start Reading EIn File.
+   1-4. Convert Units.
+     Info) Coordinate Output is omitted when log_level < 2.
+ 2. Get into Dipole Moment Calculation.
+ 3. Get into Energy and Force Calculation.
+   3-1. Get into Stretching Energy and Force Calculation.
+   3-2. Get into Bending Energy and Force  Calculation.
+   3-3. Get into Torsion Energy and Force Calculation.
+   3-4. Get into 1-4 Interaction Energy and Force Calculation.
+   3-5. Get into Non-bonding Energy and Force Calculation.
+   3-6. Get into Particle Mesh Ewald Sum Energy and Force Calculation.
+   3-7. Integrating Energies and Forces.
+     Total_charge                =      -0.000001000324 e
+     Geometrical Gravity Point   =       0.100784204729 Angstrom
+       x component               =       0.000000000000 Angstrom
+       y component               =      -0.000000000000 Angstrom
+       z component               =      -0.100784204729 Angstrom
+     Electric Dipole Moment      =       0.957774681669 e*Angstrom
+       x component               =       0.000000000000 e*Angstrom
+       y component               =      -0.000000000000 e*Angstrom
+       z component               =      -0.957774681669 e*Angstrom
+     E_bond        (     Total ) =    1634.306860533925 kcal/mol
+       E_bond      ( without H ) =    1189.275746111721 kcal/mol
+       E_bond      ( include H ) =     445.031114422205 kcal/mol
+     E_bend        (     Total ) =       2.765674085448 kcal/mol
+       E_bend      ( without H ) =       1.938624856692 kcal/mol
+       E_bend      ( include H ) =       0.827049228756 kcal/mol
+     E_tors        (     Total ) =       0.000000000102 kcal/mol
+       E_tors      ( without H ) =       0.000000000022 kcal/mol
+       E_tors      ( include H ) =       0.000000000081 kcal/mol
+     E_coulomb14   (     Total ) =      -3.682401317138 kcal/mol
+       E_coulomb14 ( without H ) =      -4.803404665953 kcal/mol
+       E_coulomb14 ( include H ) =       1.121003348815 kcal/mol
+     E_LJ14        (     Total ) =   58303.027155858304 kcal/mol
+       E_LJ14      ( without H ) =   54710.889668484786 kcal/mol
+       E_LJ14      ( include H ) =    3592.137487373519 kcal/mol
+     E_coulomb     (   Not 1-4 ) =      -0.153404631126 kcal/mol
+     E_LJ          (   Not 1-4 ) =      81.520148058488 kcal/mol
+     E_Ewald       (   Not 1-4 ) =       0.000000000000 kcal/mol
+------------------------------------------------------------------------
+     E_total                     =   60017.784032588002 kcal/mol
+     E_total                     =      95.644422965052 Hartree
+     Info) Force Output is omitted when log_level < 2.
+ 5. Write Files.
+   5-1. Convert Units.
+   5-2. Writing EOu File.
+     EOu File Name               = c6h5n.model.eou.ans
+ Terminated.

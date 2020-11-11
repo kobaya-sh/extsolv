@@ -1,0 +1,12 @@
+&filename
+  prmfile_name ='cyclo.prmtop'
+  logfile_name ='stdout'
+  log_level    = 1
+/
+&pbc
+  is_pbc       = .false.
+  is_ewald     = .false.
+  cell_x       = 55.3064936
+  cell_y       = 48.6026762
+  cell_z       = 29.3292011
+/

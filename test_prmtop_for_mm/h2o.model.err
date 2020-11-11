@@ -1,0 +1,20 @@
+ nbon =            0
+ nbon =            2
+iatom  =    1 jatom  =    2 #bond  =    1 K_r    =     369.600000000000
+  length =       0.512803569223 r_eq   =       0.974000000000 energy =      78.614713812638
+    r_ij  =       0.000000000000      0.400587146910     -0.320152211203
+      force  =       0.000000000000   -266.313919910768    212.840054882450
+        force  =     340.916401630376
+iatom  =    1 jatom  =    3 #bond  =    1 K_r    =     369.600000000000
+  length =       0.512803569223 r_eq   =       0.974000000000 energy =      78.614713812638
+    r_ij  =       0.000000000000     -0.400587146910     -0.320152211203
+      force  =       0.000000000000    266.313919910768    212.840054882450
+        force  =     340.916401630376
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+

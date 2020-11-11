@@ -1,0 +1,88 @@
+ 1. Start Reading Files.
+   1-1. Initialize.
+     infile_name  = h2o.ein
+     optfile_name = h2o.real.opt
+     prmfile_name = h2o.prmtop
+     logfile_name = stdout
+     is_pbc       =  T
+     is_ewald     =  T
+     cell_x       =    2.00000000000000     
+     cell_y       =    3.51400000000000     
+     cell_z       =    2.60500000000000     
+     basis_r(a)   =    2.00000000000000       2.151704426101899E-016
+  1.595102455889428E-016
+     basis_r(b)   =   0.000000000000000E+000   3.51400000000000     
+  1.595102455889428E-016
+     basis_r(c)   =   0.000000000000000E+000  0.000000000000000E+000
+   2.60500000000000     
+     basis_k(a*)  =   0.500000000000000      -3.061616997868383E-017
+ -3.061616997868383E-017
+     basis_k(b*)  =   0.000000000000000E+000  0.284575981787137     
+ -1.742525326049165E-017
+     basis_k(c*)  =   0.000000000000000E+000  0.000000000000000E+000
+  0.383877159309021     
+   1-2. Start Reading Prmtop File.
+     natom        =            3
+   1-3. Start Reading EIn File.
+   1-4. Convert Units.
+     Info) Coordinate Output is omitted when log_level < 2.
+ 2. Get into Dipole Moment Calculation.
+ 3. Get into Energy and Force Calculation.
+   3-1. Get into Stretching Energy and Force Calculation.
+   3-2. Get into Bending Energy and Force  Calculation.
+   3-3. Get into Torsion Energy and Force Calculation.
+   3-4. Get into 1-4 Interaction Energy and Force Calculation.
+   3-5. Get into Non-bonding Energy and Force Calculation.
+   3-6. Get into Particle Mesh Ewald Sum Energy and Force Calculation.
+ time=  0.000000000000000E+000
+ time=  0.000000000000000E+000
+ time=  0.000000000000000E+000
+ time=  0.000000000000000E+000
+ 5-a time=  0.000000000000000E+000
+ 5-b time=  0.000000000000000E+000
+ 5-c time=  2.000000000000000E-002
+ 5-d time=  6.000000000000000E-002
+ 5-e time=   1.30000000000000     
+ 5-f time=   1.30000000000000     
+ 5-g time=   1.32000000000000     
+ time=   1.32000000000000     
+ time=   1.32000000000000     
+ time=   1.32000000000000     
+ time=   1.32000000000000     
+   3-7. Integrating Energies and Forces.
+     Total_charge                =       0.000000999874 e
+     Geometrical Gravity Point   =       0.149404365228 Angstrom
+       x component               =       0.000000000000 Angstrom
+       y component               =       0.000000000000 Angstrom
+       z component               =      -0.149404365228 Angstrom
+     Electric Dipole Moment      =       1.532088364898 e*Angstrom
+       x component               =       0.000000000000 e*Angstrom
+       y component               =       0.000000000000 e*Angstrom
+       z component               =      -1.532088364898 e*Angstrom
+     E_bond        (     Total ) =     157.229427625275 kcal/mol
+       E_bond      ( without H ) =       0.000000000000 kcal/mol
+       E_bond      ( include H ) =     157.229427625275 kcal/mol
+     E_bend        (     Total ) =       0.054426172488 kcal/mol
+       E_bend      ( without H ) =       0.000000000000 kcal/mol
+       E_bend      ( include H ) =       0.054426172488 kcal/mol
+     E_tors        (     Total ) =       0.000000000000 kcal/mol
+       E_tors      ( without H ) =       0.000000000000 kcal/mol
+       E_tors      ( include H ) =       0.000000000000 kcal/mol
+     E_coulomb14   (     Total ) =       0.000000000000 kcal/mol
+       E_coulomb14 ( without H ) =       0.000000000000 kcal/mol
+       E_coulomb14 ( include H ) =       0.000000000000 kcal/mol
+     E_LJ14        (     Total ) =       0.000000000000 kcal/mol
+       E_LJ14      ( without H ) =       0.000000000000 kcal/mol
+       E_LJ14      ( include H ) =       0.000000000000 kcal/mol
+     E_coulomb     (   Not 1-4 ) =       0.000000000000 kcal/mol
+     E_LJ          (   Not 1-4 ) =       0.000000000000 kcal/mol
+     E_Ewald       (   Not 1-4 ) =      -0.021390624118 kcal/mol
+------------------------------------------------------------------------
+     E_total                     =     157.262463173645 kcal/mol
+     E_total                     =       0.250613677042 Hartree
+     Info) Force Output is omitted when log_level < 2.
+ 5. Write Files.
+   5-1. Convert Units.
+   5-2. Writing EOu File.
+     EOu File Name               = h2o.real.eou
+ Terminated.

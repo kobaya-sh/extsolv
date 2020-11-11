@@ -1,0 +1,106 @@
+lap:    0.000  clock:    0.000  (main/Initialize)
+     infile_name  = ./psb3.qmmm.ein
+     optfile_name = ./psb3.real.opt
+     prmfile_name = ../psb3.prmtop
+     logfile_name = stdout
+     is_pbc       =  T
+     is_ewald     =  T
+     cell_x       =    25.0000000000000     
+     cell_y       =    25.0000000000000     
+     cell_z       =    25.0000000000000     
+     basis_r(a)   =    25.0000000000000       1.530808498934192E-015
+  1.530808498934192E-015
+     basis_r(b)   =   0.000000000000000E+000   25.0000000000000     
+  1.530808498934192E-015
+     basis_r(c)   =   0.000000000000000E+000  0.000000000000000E+000
+   25.0000000000000     
+     basis_k(a*)  =   4.000000000000000E-002 -2.449293598294706E-018
+ -2.449293598294706E-018
+     basis_k(b*)  =   0.000000000000000E+000  4.000000000000000E-002
+ -2.449293598294706E-018
+     basis_k(c*)  =   0.000000000000000E+000  0.000000000000000E+000
+  4.000000000000000E-002
+     natom        =          231
+     Info) Coordinate Output is omitted when log_level < 2.
+lap:    0.003  clock:    0.003  (main/Read_Files)
+lap:    0.000  clock:    0.003  (main/moment)
+lap:    0.000  clock:    0.003   0.000  (main/bond/@End)
+lap:    0.000  clock:    0.003   0.000  (main/bond/@End)
+lap:    0.000  clock:    0.003   0.000  (main/angle/@End)
+lap:    0.000  clock:    0.003   0.000  (main/angle/@End)
+lap:    0.000  clock:    0.003   0.000  (main/torsion/tors)
+lap:    0.000  clock:    0.003   0.000  (main/torsion/@End)
+lap:    0.000  clock:    0.003   0.000  (main/torsion/tors)
+lap:    0.000  clock:    0.003   0.000  (main/torsion/@End)
+lap:    0.000  clock:    0.003   0.000  (main/nb14/@End)
+lap:    0.000  clock:    0.003   0.000  (main/nb14/@End)
+lap:    0.000  clock:    0.003   0.000  (main/nonbon/@End)
+lap:    0.000  clock:    0.004   0.001  (main/PME/get tcrd)
+ << eta estimation >>
+ eta   1.92214900501366     
+ r_err  8.805028409384321E-020 (direct)  8.805028409384321E-020 (scaled)
+ k_err  0.000000000000000E+000 (direct)  0.000000000000000E+000 (scaled)
+ p_err  8.805028409384220E-010 (direct)  8.805028409384220E-020 (scaled)
+lap:    0.000  clock:    0.004   0.001  (main/PME/get params)
+lap:    0.010  clock:    0.014   0.011  (main/PME/R_space)
+lap:    0.000  clock:    0.014   0.011   0.000  (main/PME/k-space/get_basis_k)
+lap:    0.000  clock:    0.014   0.011   0.000  (main/PME/k-space/get tfcrd)
+lap:    0.000  clock:    0.014   0.011   0.000  (main/PME/k-space/get bsq)
+lap:    0.004  clock:    0.018   0.015   0.004  (main/PME/k-space/get largeq)
+lap:    0.000  clock:    0.018   0.015   0.004   0.000  (main/PME/k-space/largephi/setup)
+lap:    0.000  clock:    0.018   0.015   0.004   0.000  (main/PME/k-space/largephi/kernel)
+lap:    0.000  clock:    0.018   0.015   0.004   0.000  (main/PME/k-space/largephi/k_k=0)
+lap:    0.002  clock:    0.020   0.017   0.006   0.002  (main/PME/k-space/largephi/j_k=0)
+lap:    0.000  clock:    0.020   0.017   0.006   0.002  (main/PME/k-space/largephi/i_k=0)
+lap:    0.003  clock:    0.023   0.020   0.009   0.005  (main/PME/k-space/largephi/i>k=0)
+lap:    0.001  clock:    0.024   0.021   0.010   0.006  (main/PME/k-space/largephi/division)
+lap:    0.006  clock:    0.030   0.027   0.016   0.012  (main/PME/k-space/largephi/mirror)
+lap:    0.000  clock:    0.030   0.027   0.016   0.012  (main/PME/k-space/largephi/@End)
+lap:    0.019  clock:    0.037   0.034   0.023  (main/PME/k-space/after_plan)
+lap:    0.131  clock:    0.168   0.165   0.154  (main/PME/k-space/execute_dft(forward))
+lap:    0.001  clock:    0.169   0.166   0.155  (main/PME/k-space/destroy_plan)
+lap:    0.005  clock:    0.174   0.171   0.160  (main/PME/k-space/after_plan)
+lap:    0.130  clock:    0.304   0.301   0.290  (main/PME/k-space/execute_dft(backward))
+lap:    0.000  clock:    0.304   0.301   0.290  (main/PME/k-space/destroy_plan)
+lap:    0.005  clock:    0.309   0.306   0.295  (main/PME/k-space/get potential)
+lap:    0.003  clock:    0.312   0.309   0.298  (main/PME/k-space/get e_k)
+lap:    0.001  clock:    0.313   0.310   0.299  (main/PME/k-space/get f_k)
+lap:    0.000  clock:    0.313   0.310   0.299  (main/PME/k-space/@End)
+lap:    0.299  clock:    0.313   0.310  (main/PME/Self_interaction)
+lap:    0.000  clock:    0.313   0.310  (main/PME/Integration)
+lap:    0.000  clock:    0.313   0.310  (main/PME/@End)
+lap:    0.310  clock:    0.313  (main/integration)
+     Total_charge                =       0.000000018988 e
+     Geometrical Gravity Point   =       5.917518734250 Angstrom
+       x component               =       2.245894178986 Angstrom
+       y component               =       3.758542575300 Angstrom
+       z component               =       3.980746791326 Angstrom
+     Electric Dipole Moment      =       3.243269873175 e*Angstrom
+       x component               =      -0.027194011696 e*Angstrom
+       y component               =      -2.919784576569 e*Angstrom
+       z component               =       1.411707470548 e*Angstrom
+     E_bond        (     Total ) =    1583.611062818299 kcal/mol
+       E_bond      ( without H ) =     900.113843783080 kcal/mol
+       E_bond      ( include H ) =     683.497219035219 kcal/mol
+     E_bend        (     Total ) =       5.031747383135 kcal/mol
+       E_bend      ( without H ) =       1.558097622575 kcal/mol
+       E_bend      ( include H ) =       3.473649760560 kcal/mol
+     E_tors        (     Total ) =       2.510934137802 kcal/mol
+       E_tors      ( without H ) =       0.192656921889 kcal/mol
+       E_tors      ( include H ) =       2.318277215914 kcal/mol
+     E_coulomb14   (     Total ) =      11.684452740026 kcal/mol
+       E_coulomb14 ( without H ) =       2.549980073510 kcal/mol
+       E_coulomb14 ( include H ) =       9.134472666517 kcal/mol
+     E_LJ14        (     Total ) =    4160.577886780046 kcal/mol
+       E_LJ14      ( without H ) =     975.923579880234 kcal/mol
+       E_LJ14      ( include H ) =    3184.654306899813 kcal/mol
+     E_coulomb     (   Not 1-4 ) =     178.541883296707 kcal/mol
+     E_LJ          (   Not 1-4 ) =    2194.471018552780 kcal/mol
+     E_Ewald       (   Not 1-4 ) =   -7625.610314417640 kcal/mol
+------------------------------------------------------------------------
+     E_total                     =     510.818671291157 kcal/mol
+     E_total                     =       0.814041335296 Hartree
+     Info) Force Output is omitted when log_level < 2.
+lap:    0.000  clock:    0.313  (main/Logging)
+lap:    0.002  clock:    0.315  (main/EOu-writing)
+lap:    0.315  clock:   (@Clock_Clear)

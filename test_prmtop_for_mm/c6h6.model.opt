@@ -1,0 +1,12 @@
+    &filename
+      prmfile_name ='c6h6.prmtop'
+      logfile_name ='stdout'
+      log_level    = 1
+    /
+    &pbc
+      is_pbc       = false
+      is_ewald     = false
+      cell_x       =    6.3140000
+      cell_y       =    6.9820000
+      cell_z       =    2.0000000
+    /

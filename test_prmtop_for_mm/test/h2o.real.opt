@@ -1,0 +1,12 @@
+    &filename
+      prmfile_name ='../h2o.prmtop'
+      logfile_name ='stdout'
+      log_level    = 1
+    /
+    &pbc
+      is_pbc       = .true.
+      is_ewald     = .true.
+      cell_x       =    2.0000000
+      cell_y       =    3.5140000
+      cell_z       =    2.6050000
+    /

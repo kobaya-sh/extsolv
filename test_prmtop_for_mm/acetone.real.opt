@@ -1,0 +1,12 @@
+    &filename
+      prmfile_name ='acetone.prmtop'
+      logfile_name ='stdout'
+      log_level    = 1
+    /
+    &pbc
+      is_pbc       = .true.
+      is_ewald     = .true.
+      cell_x       =    5.8360000
+      cell_y       =    3.6740000
+      cell_z       =    4.4470000
+    /

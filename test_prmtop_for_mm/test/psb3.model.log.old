@@ -1,0 +1,111 @@
+lap:    0.000  clock:    0.000  (main/Initialize)
+ 1. Start Reading Files.
+   1-1. Initialize.
+     infile_name  = ./psb3.bohr.ein
+     optfile_name = ./psb3.model.opt
+     prmfile_name = ../psb3.prmtop
+     logfile_name = stdout
+     is_pbc       =  F
+   1-2. Start Reading Prmtop File.
+     natom        =          231
+   1-3. Start Reading EIn File.
+   1-4. Convert Units.
+     Info) Coordinate Output is omitted when log_level < 2.
+lap:    0.002  clock:    0.002  (main/Read_Files)
+lap:    0.000  clock:    0.002  (main/moment)
+ 3. Get into Energy and Force Calculation.
+   3-1. Get into Stretching Energy and Force Calculation.
+lap:    0.000  clock:    0.002
+   0.000  (main/bond/@End)
+lap:    0.000  clock:    0.002
+   0.000  (main/bond/@End)
+lap:    0.000  clock:    0.002
+   0.000  (main/angle/@End)
+lap:    0.000  clock:    0.002
+   0.000  (main/angle/@End)
+lap:    0.000  clock:    0.002
+   0.000  (main/torsion/tors)
+lap:    0.000  clock:    0.002
+   0.000  (main/torsion/@End)
+lap:    0.000  clock:    0.002
+   0.000  (main/torsion/tors)
+lap:    0.000  clock:    0.002
+   0.000  (main/torsion/@End)
+lap:    0.000  clock:    0.002
+   0.000  (main/nb14/@End)
+lap:    0.000  clock:    0.002
+   0.000  (main/nb14/@End)
+          20          21  0.99782130040298134     
+          26          27  0.99542183095386794     
+          32          33  0.97308175220386184     
+          38          39  0.95406694950656545     
+          44          45  0.93142133281368067     
+          50          51  0.93317084200188039     
+          56          57  0.96148838899327083     
+          62          63  0.97014028730819768     
+          68          69  0.97646833324326532     
+          74          75  0.97562269036069393     
+          86          87  0.99786233327706986     
+          92          93  0.96005007296945677     
+          98          99  0.94899911937086001     
+         110         111  0.95356723263895427     
+         116         117  0.97694814818161579     
+         128         129  0.99785737484598092     
+         134         135  0.97359460144852994     
+         140         141  0.99414430441535762     
+         146         147  0.99132384873576029     
+         152         153  0.98544046681526576     
+         158         159  0.99016779455912729     
+         170         171  0.95238415668241516     
+         176         177  0.94211435224051243     
+         182         183  0.98929762758290796     
+         188         189  0.95995501179718323     
+         194         195  0.99900667211355809     
+         200         201  0.98184806162969673     
+         206         207  0.96592508785705267     
+         212         213  0.97732849798238730     
+         218         219  0.95215914293314852     
+         224         225  0.98409370219049974     
+lap:    0.001  clock:    0.003
+   0.001  (main/nonbon/@End)
+   3-7. Integrating Energies and Forces.
+lap:    0.001  clock:    0.003  (main/integration)
+     Total_charge                =       0.000000018988 e
+     Geometrical Gravity Point   =      11.182494201845 Angstrom
+       x component               =       4.244126594666 Angstrom
+       y component               =       7.102618925804 Angstrom
+       z component               =       7.522524205182 Angstrom
+     Electric Dipole Moment      =     111.682549773831 e*Angstrom
+       x component               =      -0.936430498630 e*Angstrom
+       y component               =    -100.543278640202 e*Angstrom
+       z component               =      48.612386715570 e*Angstrom
+     E_bond        (     Total ) =      69.633306084225 kcal/mol
+       E_bond      ( without H ) =      11.225598341793 kcal/mol
+       E_bond      ( include H ) =      58.407707742432 kcal/mol
+     E_bend        (     Total ) =      73.184145589939 kcal/mol
+       E_bend      ( without H ) =       1.558097622577 kcal/mol
+       E_bend      ( include H ) =      71.626047967362 kcal/mol
+     E_tors        (     Total ) =      10.435026140125 kcal/mol
+       E_tors      ( without H ) =       0.192656921887 kcal/mol
+       E_tors      ( include H ) =      10.242369218237 kcal/mol
+     E_coulomb14   (     Total ) =     197.300498708064 kcal/mol
+       E_coulomb14 ( without H ) =       1.349390805360 kcal/mol
+       E_coulomb14 ( include H ) =     195.951107902705 kcal/mol
+     E_LJ14        (     Total ) =       0.661426527786 kcal/mol
+       E_LJ14      ( without H ) =       0.038134856758 kcal/mol
+       E_LJ14      ( include H ) =       0.623291671029 kcal/mol
+     E_coulomb     (   Not 1-4 ) =    -175.734714671310 kcal/mol
+     E_LJ          (   Not 1-4 ) =     -13.758255735505 kcal/mol
+     E_Ewald       (   Not 1-4 ) =       0.000000000000 kcal/mol
+------------------------------------------------------------------------
+     E_total                     =     161.721432643324 kcal/mol
+     E_total                     =       0.257719496905 Hartree
+     Info) Force Output is omitted when log_level < 2.
+lap:    0.000  clock:    0.003  (main/Logging)
+ 5. Write Files.
+   5-1. Convert Units.
+   5-2. Writing EOu File.
+     EOu File Name               = psb3.model.eou
+ Terminated.
+lap:    0.001  clock:    0.004  (main/EOu-writing)
+lap:    0.004  clock:   (@Clock_Clear)

@@ -1,0 +1,165 @@
+This Main Version is mm.16.6(unstable).
+
+This version CAN
+  + Single point calculation of MM energy
+  + Single point calculation of MM force
+  + Periodic boundery condition
+  + Periodic boundery condition with Ewald Sum
+  + Periodic boundery condition with Direct Sum ( need to modify main.f90 )
+  + Periodic boundery condition with Particle Mesh Ewald ( Energy & FORCE )
+  + Periodic boundery condition with for parallelepiped cell
+  + electronic/mechanical embedding ( switched by is_ee )
+This version CANNOT
+  - Optimize structure
+  - Molecular dynamics
+  - use as QM/MM calculation interface
+  - handle link atom
+Fixed bug
+  * erfc in x < 1.4 ( asymptotic expansion -> global approximation )
+  * function fm ( in pme )
+  * pme ( about FFT )
+  * pme ( about excluded atoms )
+  * moment ( gravity point )
+  11.2+ TK & TEQ in bend.f90 ( memory allocation error )
+  11.2+ ONE_SCEE & ONE_SCNB in nb14.f90 ( index error )
+  12.0+ e_lj and e_coulomb in nonbon.f90 ( initialization error )
+  12.0+ direct Coulomb sum in debug_ewald ( coefficient for reprica; 1.0->0.5 )
+  14.2+ ( NOT TESTED ) Hydrogen bond calculation in nonbon.f90 and nb14.f90 ( added )
+  15.0+ call subroutine pbc before calculate r_ijn in pme.f90.
+  15.0+ inclement of p_numex in pme.f90 ( If j==0, p_numex was not inclemented. )
+Other Modification
+  12.1+ Fast Interpolation in pme.f90 ( use fm.f90 )
+  14.0+ Change of FFT library ( use fft.f90, my library )
+        -> Any size of grid is allowed ( but got slow a little, maybe. )
+  14.1+ Remove "common" statement from prmtop.inc
+  15.2+ Change of FFT library ( FFTW3 )
+        -> large impact to speed
+  15.2+ fm.f90 was optimized. This update would cause a little difference
+        from previous versions.
+  15.4+ clock.f90 was added.
+  16.6+ bond, bend, tors was separated.
+  16.6+ mmcounter.inc was removed.
+  16.6+ dipole.f90 was fixed.
+  16.6+ prmtop_r.f90 was changed to be generated from prmtop_r.sh.
+  16.6+ tors.f90 pme.f90 and fm.f90 was optimized.
+  16.6+ excluded in pme was merged into nonbon.f90.
+  16.7+ pbc is applied to bond vector.
+  16.7+ (optional) guess_eta was added.
+  16.8+ fm was fixed.
+  16.9+ eta-guessing subroutine was added.
+  16.11+ term-wise force is not calculated.
+        (total force is the only results.)
+
+This version is consist of 
+  main.f90        ( main program )
+  < dependent on >
+    prmtop.f90    ( read .prmtop file )
+    ein.g90       ( read .EIn file )
+    option.f90    ( read .opt file )
+    moment.f90    ( calculate electric dipole moment )
+    bond.f90      ( energy & force of bond )
+    bend.f90      ( energy & force of angle )
+    tors.f90      ( energy & force of dihedral )
+    nonbon.f90    ( energy & force of coulomb and VDW )
+    nb14.f90      ( energy & force of 1-4 non-bonding interaction )
+    pme.f90       ( energy & force of Particle Mesh Ewald )
+    function.f90  ( length, angle, dihedral, length_vec, angle_vec, cross )
+    eou.f90       ( write EOu file )
+    pbc.f90       ( move atoms into PBC box )
+    fft.f90       ( fast Fourier transform )
+    const.inc     ( physical constants )
+    size.inc      ( maximum size of arrayes )
+    prmtop.inc    ( prmtop data )
+    gau.inc       ( EIn data )
+    mmcounter.inc ( counters, not include common variables )
+    mmpara.inc    ( cutoff and box size )
+    pme.inc       ( parameter for PME )
+  < additional subroutine > ( NOT used in default )
+    ewald_e.f90   ( energy of ewald sum )
+    ewald_f.f90   ( force of ewald sum )
+    cds_e.f90     ( energy of long range Coulomb interaction by summing up directly )
+    cds_f.f90     ( force of long range Coulomb interaction by summing up directly )
+
+  Usage: ./mm.x T foo.EIn bar.EOu
+    ( if first variable = 'T' then test.opt  is read )
+    ( if first variable = 'R' then real.opt  is read )
+    ( if first variable = 'M' then model.opt is read )
+    ( else first variable is used as opt file )
+    ( Error message to STDERR )
+
+  Option File Format
+  +-----------------------------------+
+  |                                   |
+  |   &filename                       |
+  |     prmfile_name ='cyclo.prmtop'  |   <- Input Prmtop File Name
+  |     logfile_name ='mm.log'        |   <- Log of mm.x
+  |     log_level    = 1              |   <- 0: none ; 1: moderate ; 2: unsightly
+  |   /                               |
+  |   &pbc                            |
+  |     is_pbc       = .true.         |   <- Whether use Periodic Boundary Condition
+  |     is_ewald     = .true.         |   <- T: PME; F: Minimum Image ; when is_pbc = .true.
+  |     cell_x       = 20.0d0         |
+  |     cell_y       = 20.0d0         |   <- orthorhombic cell is allowed ( in angstrom )
+  |     cell_z       = 20.0d0         |   <- parallel piped cell is also allowed
+  |     alpha        = 90.0d0         |
+  |     beta         = 90.0d0         |
+  |     gamma        = 90.0d0         |
+  |   /                               |
+  |                                   |
+  +-----------------------------------+
+  NOTICE:
+    1. If logfile_name is STDOUT/stdout/STDERR/stderr, corresponding device is used.
+    2. If is_pbc=.false. and is_ewald=.true., mm.x stops executing.
+
+  debug_function.f90
+  < dependent on >
+    function.f90  ( length, angle, dihedral, length_vec, angle_vec, cross )
+
+  debug_pbc.f90
+  < dependent on >
+    pbc.f90 
+    mmpara.inc
+    debug_pbc.dat ( for STDIN )
+
+  genein.pl
+  Usage: perl genein.pl hoge.rst > hoge.EIn
+    ( no other file is read )
+    ( output is in ANGSTROM )
+
+  debug_ein.f90
+  < dependent on >
+    ein.f90
+
+  debug_option.f90
+  < dependent on >
+    option.f90
+    mmpara.inc
+  Usage: make debug_option.x
+         ./debug_option.x ( require test.opt )
+
+  debug_ewald.f90
+  < dependent on >
+    pme.f90
+    pme.f90
+    function.f90
+    pbc.f90
+    fft.f90
+  Usage: ./debug_ewald.x < lattice.dat
+  < NOTICE >
+    1. Ewald sum is not fair for cell which contains too few atoms.
+    2. Ewald sum convergents energy for minimum image in asymptotic
+       region p->0 ( R-space only ) rather than Coulomb direct sum.
+
+  random.pl
+  Usage: perl random.pl > hoge.dat
+    ( make debug data for debug_ewald.f90 )
+
+  moduleclean
+  Usage: ./moduleclean
+    ( remove interface modules generated by ifort )
+
+  gensize.f90
+  Usage: gensize < hoge.prmtop > size.inc
+    ( generate include file for memory allocation )
+    ( Use before make 'mm.x' )
+

@@ -1,0 +1,13 @@
+    &filename
+      prmfile_name ='../psb3.prmtop'
+      logfile_name ='stdout'
+      log_level    = 1
+    /
+    &pbc
+      is_pbc       = .false.
+      is_ewald     = .false.
+      is_ee        = .true.,
+      cell_x       =    6.0051847
+      cell_y       =   11.8728443
+      cell_z       =   10.3244985
+    /

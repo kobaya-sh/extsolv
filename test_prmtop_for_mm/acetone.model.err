@@ -1,0 +1,281 @@
+ nbon =            3
+iatom  =    1 jatom  =    2 #bond  =    1 K_r    =     648.000000000000
+  length =       0.635012650320 r_eq   =       1.214000000000 energy =     217.226675505977
+    r_ij  =       0.000000000000      0.000000000000      0.635012650320
+      force  =       0.000000000000      0.000000000000   -750.367605185280
+        force  =     750.367605185280
+iatom  =    1 jatom  =    3 #bond  =    2 K_r    =     328.300000000000
+  length =       0.740648489747 r_eq   =       1.508000000000 energy =     193.312344116515
+    r_ij  =       0.641362776823      0.000000000000     -0.370424046020
+      force  =    -436.301634423479      0.000000000000    251.989392818841
+        force  =     503.843001632261
+iatom  =    1 jatom  =    4 #bond  =    2 K_r    =     328.300000000000
+  length =       0.740648489747 r_eq   =       1.508000000000 energy =     193.312344116515
+    r_ij  =      -0.641362776823      0.000000000000     -0.370424046020
+      force  =     436.301634423479      0.000000000000    251.989392818841
+        force  =     503.843001632261
+ nbon =            6
+iatom  =    3 jatom  =    5 #bond  =    3 K_r    =     337.300000000000
+  length =       0.529097826065 r_eq   =       1.092000000000 energy =     106.876492608181
+    r_ij  =       0.373599109272      0.000000000000      0.374657463689
+      force  =    -268.132290275491      0.000000000000   -268.891871834345
+        force  =     379.733806536839
+iatom  =    3 jatom  =    6 #bond  =    3 K_r    =     337.300000000000
+  length =       0.529204195949 r_eq   =       1.092000000000 energy =     106.836104183283
+    r_ij  =      -0.009525189755     -0.442921323598     -0.289459933104
+      force  =       6.833568386324    317.760929964046    207.664550406611
+        force  =     379.662049412482
+iatom  =    3 jatom  =    7 #bond  =    3 K_r    =     337.300000000000
+  length =       0.529204195949 r_eq   =       1.092000000000 energy =     106.836104183283
+    r_ij  =      -0.009525189755      0.442921323598     -0.289459933104
+      force  =       6.833568386324   -317.760929964046    207.664550406611
+        force  =     379.662049412482
+iatom  =    4 jatom  =    8 #bond  =    3 K_r    =     337.300000000000
+  length =       0.529097826065 r_eq   =       1.092000000000 energy =     106.876492608181
+    r_ij  =      -0.373599109272      0.000000000000      0.374657463689
+      force  =     268.132290275491      0.000000000000   -268.891871834345
+        force  =     379.733806536839
+iatom  =    4 jatom  =    9 #bond  =    3 K_r    =     337.300000000000
+  length =       0.529204195949 r_eq   =       1.092000000000 energy =     106.836104183283
+    r_ij  =       0.009525189755      0.442921323598     -0.289459933104
+      force  =      -6.833568386324   -317.760929964046    207.664550406611
+        force  =     379.662049412482
+iatom  =    4 jatom  =   10 #bond  =    3 K_r    =     337.300000000000
+  length =       0.529204195949 r_eq   =       1.092000000000 energy =     106.836104183283
+    r_ij  =       0.009525189755     -0.442921323598     -0.289459933104
+      force  =      -6.833568386324    317.760929964046    207.664550406611
+        force  =     379.662049412482
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to ANGLE_VEC, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to CROSS, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to CROSS, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to CROSS, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to CROSS, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to CROSS, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to CROSS, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to CROSS, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to CROSS, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to CROSS, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to CROSS, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to CROSS, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to CROSS, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to CROSS, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to CROSS, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to CROSS, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to CROSS, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to CROSS, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to CROSS, an array temporary was created for argument #2
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to LENGTH_VEC, an array temporary was created for argument #1
+
+forrtl: warning (402): fort: (1): In call to CROSS, an array temporary was created for argument #2
+
